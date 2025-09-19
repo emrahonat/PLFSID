@@ -202,13 +202,13 @@ duration_desp(number_of_filter+3) = toc;
 duration_desp(number_of_filter+4) = toc;
 duration_desp(number_of_filter+5) = toc;
 
-tic
-[fused_image_Pareto, type_map_Pareto, fused_color_maps_Pareto, score_map_Pareto] = pareto_fusion(filtered_image, ssim_maps, psnr_maps, mse_maps, ent_maps, uqi_maps, colormap);
-duration_desp(number_of_filter+6) = toc;
+% tic
+% [fused_image_Pareto, type_map_Pareto, fused_color_maps_Pareto, score_map_Pareto] = pareto_fusion(filtered_image, ssim_maps, psnr_maps, mse_maps, ent_maps, uqi_maps, colormap);
+% duration_desp(number_of_filter+6) = toc;
 
-tic
-[fused_image_learned, type_map_learned, fused_color_maps_learned, score_map_learned, net_learned] = learned_fusion(filtered_image, ssim_maps, psnr_maps, mse_maps, ent_maps, uqi_maps, colormap, X);
-duration_desp(number_of_filter+7) = toc;
+% tic
+% [fused_image_learned, type_map_learned, fused_color_maps_learned, score_map_learned, net_learned] = learned_fusion(filtered_image, ssim_maps, psnr_maps, mse_maps, ent_maps, uqi_maps, colormap, X);
+% duration_desp(number_of_filter+7) = toc;
 
 %% Calculations - Histograms - Figures
 
