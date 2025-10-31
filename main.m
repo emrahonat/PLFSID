@@ -219,16 +219,6 @@ tic
 [fused_despekled_images, type_desp_maps, fused_color_maps fused_param_map_values] = fusions_despekling(filtered_image, ssim_maps, dssim_maps, psnr_maps, mse_maps, enl_maps, ent_maps, epi_maps, q_maps, uqi_maps, eqp_maps, colormap);
 duration_desp(number_of_filter:number_of_filter+10) = toc;
 
-% Pareto Fusion
-% tic
-% [fused_image_Pareto, type_map_Pareto, fused_color_maps_Pareto, score_map_Pareto] = pareto_fusion(filtered_image, ssim_maps, psnr_maps, mse_maps, ent_maps, uqi_maps, colormap);
-% duration_desp(number_of_filter+6) = toc;
-
-% Learned Fusion
-% tic
-% [fused_image_learned, type_map_learned, fused_color_maps_learned, score_map_learned, net_learned] = learned_fusion(filtered_image, ssim_maps, psnr_maps, mse_maps, ent_maps, uqi_maps, colormap, X);
-% duration_desp(number_of_filter+7) = toc;
-
 %% Calculations - Histograms - Figures
 
 labels = [string('SSIM');string('DSSIM');string('PSNR');string('MSE');string('ENL');string('ENT');string('EPI');string('Q');string('UQI');string('EQP')];
@@ -242,24 +232,6 @@ for i = 1:1:number_of_params
 
     [mean_param(i) param_map(i,:)] = calc_hist_fig(X, fused_despekled_image, type_desp_map, fused_color_map, fused_param_map_value, colormap, labels(i), number_of_filter, K, window, L);
 end
-
-
-% % Pareto
-% fused_despekled_image_Pareto = squeeze(fused_image_Pareto(1,:,:));
-% type_desp_image_Pareto = squeeze(type_map_Pareto(1,:,:));
-% fused_color_maps_Pareto = fused_color_maps_Pareto;
-% fused_param_map_values_Pareto = squeeze(score_map_Pareto(1,:,:));
-% 
-% [mean_param_Pareto param_Pareto] = calc_hist_fig(X, fused_despekled_image_Pareto, type_desp_image_Pareto, fused_color_maps_Pareto, fused_param_map_values_Pareto, colormap, number_of_filter, K, window, L);
-% 
-% % Learned
-% fused_despekled_image_learned = squeeze(fused_image_learned(1,:,:));
-% type_desp_image_learned = squeeze(type_map_learned(1,:,:));
-% fused_color_maps_learned = fused_color_maps_learned;
-% fused_param_map_values_learned = squeeze(score_map_learned(1,:,:));
-% 
-% [mean_param_learned param_learned] = calc_hist_fig(X, fused_despekled_image_learned, type_desp_image_learned, fused_color_maps_learned, fused_param_map_values_learned, colormap, number_of_filter, K, window, L);
-
 
 % Calculated Values
 mssim_vals  = [mssim_vals param_map(:,1)'];
