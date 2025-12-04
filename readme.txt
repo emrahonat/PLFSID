@@ -4,8 +4,8 @@ Quality-Aware Pixel-Level Fusion for Robust SAR Image Despeckling
 
 Overview
 ---------
-This repository currently includes only the main.m file.
-The purpose of this file is to provide an overview of the academic work and its implementation framework.
+This repository currently includes main.m file and Napoli images (noisy and noiseless).
+The purpose of main file is to provide an overview of the academic work and its implementation framework.
 All MATLAB files related to the despeckling algorithms and fusion method developed in this study will be uploaded after the corresponding paper is accepted for publication.
 
 Contents
