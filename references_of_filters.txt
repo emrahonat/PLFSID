@@ -1,0 +1,61 @@
+%% Pixel-Level Fusion of SAR Image Despeckling Algorithms
+% 
+% Dr. Emrah Onat
+% 04.12.2025
+
+% Despeckling Algorithms
+% 01 - Mean Filter
+[9] F. T. Ulaby, R. K. Moore, and A. K. Fung, Radar Remote Sensing and Surface Scattering and Emission Theory, 
+vol.6 II. Scientific Research Publishing, 1982.
+
+% 02 - Median Filter
+[10] J. W. Tukey, Exploratory Data Analysis. Addison-Wesley Publishing Company, Reading, Mass., 1977.
+
+% 03 - Frost Filter
+[11] V. S. Frost, J. A. Stiles, K. S. Shanmugan and J. C. Holtzman, ”A Model for Radar Images and Its Application
+to Adaptive Digital Filtering of Multiplicative Noise,” in IEEE Transactions on Pattern Analysis and Machine
+Intelligence, vol. PAMI-4, no. 2, pp. 157-166, March 1982, doi: 10.1109/TPAMI.1982.4767223.
+
+% 04 - Mod. Frost Filter
+[12] K. Sorensen, S. Lupemba, and E. Lippert, ”Speckle reduction of Synthetic Aperture Radar images”, Earth and
+Space Physics and Engineering, Earth and Space Physics and Engineering, 2017.
+
+% 05 - Lee Filter
+[13] J.-S. Lee, ”Refined filtering of image noise using local statistics”, Computer Graphics and Image Processing, vol. 15,
+no. 4, pp. 380–389, 1981. doi:10.1016/S0146-664X(81)80018-4
+
+% 06 - Kuan Filter
+[14] D. T. Kuan, A. A. Sawchuk, T. C. Strand and P. Chavel, ”Adaptive Noise Smoothing Filter for Images with Signal-
+Dependent Noise,” in IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. PAMI-7, no. 2, pp.
+165-177, March 1985, doi: 10.1109/TPAMI.1985.4767641.
+
+% 07 - Kuwahara Filter
+[15] M. Kuwahara, K. Hachimura, S. Eiho, and M. Kinoshita, ”Processing of RI-Angiocardiographic Images”, in Digital
+Processing of Biomedical Images, G. Tsuji, Ed. Springer, 1976, pp. 187–203.
+
+% 08 - SDD Filter
+[27] C. Ozcan, B. Sen and F. Nar, ”Sparsity-Driven Despeckling for SAR Images,” in IEEE Geoscience and Remote
+Sensing Letters, vol. 13, no. 1, pp. 115-119, Jan. 2016, doi: 10.1109/LGRS.2015.2499445.
+
+% 09 - SDD-QL Filter
+[28] F. Nar, ”SAR image despeckling using quadratic–linear approximated-norm”, Electronics Letters, vol. 54, no. 6, pp.
+387–389, 2018. doi: 10.1049/el.2017.38736
+
+% 10 - SARBM3D Filter
+[16] S. Parrilli, M. Poderico, C. V. Angelino and L. Verdoliva, ”A Nonlocal SAR Image Denoising Algorithm Based on
+LLMMSE Wavelet Shrinkage,” in IEEE Transactions on Geoscience and Remote Sensing, vol. 50, no. 2, pp. 606-616,
+Feb. 2012, doi: 10.1109/TGRS.2011.2161586.
+
+% 11 - NCDF Filter
+[26] R. Bernardes, C. Maduro, P. Serranho, A. Ara´ujo, S. Barbeiro, and J. Cunha-Vaz, ”Improved adaptive complex
+diffusion despeckling filter”, Optics Express, vol. 18, no. 23, pp. 24048–24059, 2010. doi: 10.1364/OE.18.024048
+
+% 12 - SRAD Filter
+[7] Yongjian Yu and S. T. Acton, ”Speckle reducing anisotropic diffusion,” in IEEE Transactions on Image Processing,
+vol. 11, no. 11, pp. 1260-1270, Nov. 2002, doi: 10.1109/TIP.2002.804276
+
+
+
+
+
+
